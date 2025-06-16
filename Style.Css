@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+header {
+  background-color: #14597b;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gcs-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+
+main {
+  padding: 50px 20px;
+  text-align: justify;
+  min-height: 400px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.description {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-family: Agency FB;
+  font-weight: bolder;
+}
+
+.download-btn {
+  background-color: #c40000;
+  color: yellow;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: 2px solid #800000;
+  border-radius: 6px;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.4),
+              0 4px 0 #800000,
+              0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #a00000;
+  transform: translateY(1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3),
+              0 2px 0 #800000,
+              0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer-black {
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-yellow {
+  background-color: rgb(31, 8, 230);
+  color: rgb(241, 241, 234);
+  padding: 40px 20px;
+}
