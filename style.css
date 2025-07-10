@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #005b5c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 60px;
+  height: auto;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  
+}
+
+.job-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #005b5c;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+header .logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white; /* Optional: white border around the circle */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: url('kikori-solar.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+footer {
+  background-color: #005b5c;
+  color: white;
+  text-align: center;
+
+  padding: 40px 5px;
+  margin-top: 500px;
+}
+
+.apply-btn {
+  display: inline-block;
+  background-color: #00796b;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #004d40;
+}
+
+.job-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 6px solid #00796b;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+
+
+.vision-mission {
+  background-color: #ffffff77;
+  padding: 20px;
+  margin-top: 30px;
+  border-left: 5px solid #005b5c;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.vision-mission h3 {
+  color: #005b5c;
+  margin-top: 10px;
+}
+
+
+footer p {
+  text-align: center;
+  color: #ccc;
+  padding: 15px 0;
+  background-color:transparent;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
