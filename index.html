@@ -11,9 +11,19 @@
     <h1>GCSKDH Job Advert Portal</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="jobs.html">Job Vacancies</a>
+      <a href="jobs.html" class="nav-link" id="job-link">Job Vacancies</a>
     </nav>
   </header>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const jobLink = document.getElementById('job-link');
+    if (jobLink) {
+      jobLink.classList.add('auto-highlight');
+    }
+  });
+</script>
+
 
 
 <main>
