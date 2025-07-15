@@ -158,7 +158,7 @@ if (jobList) {
         <li>Police Clearance (if applicable)</li>
       </ul>
       <p><em>Only shortlisted applicants will be contacted for an interview.</em></p>
-      <a href="mailto:recruitment@gcskdh.org.pg?subject=Job Application - ${encodeURIComponent(job.title)}" class="apply-btn">Apply via Email</a>
+     <a href="mailto: hr_kikorihospital@outlook.com?subject=Job Application - ${encodeURIComponent(job.title)}" class="apply-btn">Apply via Email</a>
     `;
     jobList.appendChild(jobCard);
   });
