@@ -11,62 +11,6 @@ const jobs = [
     <strong>Duties:</strong> Run diagnostics, maintain records, manage equipment, coordinate infection control, and work across clinical teams.`
   },
   
-  {
-    title: "ICT Officer",
-    dept: "Clinics",
-    position: "GUL-GCS-246",
-    location: "Kapuna District Hospital",
-    vacancies: 1,
-    deadline: "August 15, 2025",
-    description: `🧪 Medical Laboratory Technician – CHS Grade 11<br><strong>Location:</strong> Kapuna District Hospital<br>
-    <strong>Salary:</strong> CHS 11<br><strong>Purpose:</strong> Manage and operate the hospital lab.<br><strong>Qualifications:</strong> Diploma/Certificate in Med Lab Studies, registered with PNG Medical Board.<br>
-    <strong>Duties:</strong> Run diagnostics, maintain records, manage equipment, coordinate infection control, and work across clinical teams.`
-  },
-  {
-    title: "Nursing Officer",
-    dept: "Clinics",
-    position: "GUL-GCS-246",
-    location: "Kapuna District Hospital",
-    vacancies: 1,
-    deadline: "August 15, 2025",
-    description: `🧪 Medical Laboratory Technician – CHS Grade 11<br><strong>Location:</strong> Kapuna District Hospital<br>
-    <strong>Salary:</strong> CHS 11<br><strong>Purpose:</strong> Manage and operate the hospital lab.<br><strong>Qualifications:</strong> Diploma/Certificate in Med Lab Studies, registered with PNG Medical Board.<br>
-    <strong>Duties:</strong> Run diagnostics, maintain records, manage equipment, coordinate infection control, and work across clinical teams.`
-  },
-  {
-    title: "Radio Grapher",
-    dept: "Clinics",
-    position: "GUL-GCS-246",
-    location: "Kapuna District Hospital",
-    vacancies: 1,
-    deadline: "August 15, 2025",
-    description: `🧪 Medical Laboratory Technician – CHS Grade 11<br><strong>Location:</strong> Kapuna District Hospital<br>
-    <strong>Salary:</strong> CHS 11<br><strong>Purpose:</strong> Manage and operate the hospital lab.<br><strong>Qualifications:</strong> Diploma/Certificate in Med Lab Studies, registered with PNG Medical Board.<br>
-    <strong>Duties:</strong> Run diagnostics, maintain records, manage equipment, coordinate infection control, and work across clinical teams.`
-  },
-  {
-    title: "Accountant",
-    dept: "Clinics",
-    position: "GUL-GCS-246",
-    location: "Kapuna District Hospital",
-    vacancies: 1,
-    deadline: "August 15, 2025",
-    description: `🧪 Medical Laboratory Technician – CHS Grade 11<br><strong>Location:</strong> Kapuna District Hospital<br>
-    <strong>Salary:</strong> CHS 11<br><strong>Purpose:</strong> Manage and operate the hospital lab.<br><strong>Qualifications:</strong> Diploma/Certificate in Med Lab Studies, registered with PNG Medical Board.<br>
-    <strong>Duties:</strong> Run diagnostics, maintain records, manage equipment, coordinate infection control, and work across clinical teams.`
-  },
-
-  {
-    title: "Electrician",
-    dept: "Clinics",
-    position: "GUL-GCS-246",
-    location: "Kapuna District Hospital",
-    vacancies: 1,
-    deadline: "August 15, 2025",
-    description: `🧪 Medical Laboratory Technician – CHS Grade 11<br><strong>Location:</strong> Kapuna District Hospital<br>
-    <strong>Salary:</strong> CHS 11<br><strong>Purpose:</strong> Manage and operate the hospital lab.<br><strong>Qualifications:</strong> Diploma/Certificate in Med Lab Studies, registered with PNG Medical Board.<br>
-    <strong>Duties:</strong> Run diagnostics, maintain records, manage equipment, coordinate infection control, and work across clinical teams.`
-  },
 ];
 
 function loadJobs() {
@@ -156,4 +100,5 @@ function showJob(index) {
   `;
   modal.style.display = "block";
 }
+
 
