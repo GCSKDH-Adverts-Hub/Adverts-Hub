@@ -1,15 +1,28 @@
 const jobs = [
-  {
-    title: "Medical Laboratory Technician",
-    dept: "Clinics",
-    position: "GUL-GCS-246",
-    location: "Kapuna District Hospital",
-    vacancies: 1,
-    deadline: "August 15, 2025",
-    description: `🧪 Medical Laboratory Technician – CHS Grade 11<br><strong>Location:</strong> Kapuna District Hospital<br>
-    <strong>Salary:</strong> CHS 11<br><strong>Purpose:</strong> Manage and operate the hospital lab.<br><strong>Qualifications:</strong> Diploma/Certificate in Med Lab Studies, registered with PNG Medical Board.<br>
-    <strong>Duties:</strong> Run diagnostics, maintain records, manage equipment, coordinate infection control, and work across clinical teams.`
-  },
+  title: "Medical Laboratory Technician",
+  dept: "Clinics",
+  position: "GUL-GCS-246",
+  location: "Kapuna District Hospital",
+  vacancies: 1,
+  deadline: "August 15, 2025",
+  description: `🧪 <strong>Medical Laboratory Technician – CHS Grade 11</strong><br>
+  <strong>Location:</strong> Kapuna District Hospital<br>
+  <strong>Salary:</strong> CHS 11<br>
+  <strong>Purpose:</strong> Manage and operate the hospital lab.<br>
+  <strong>Qualifications:</strong> Diploma/Certificate in Med Lab Studies, registered with PNG Medical Board.<br>
+  <strong>Duties:</strong> Run diagnostics, maintain records, manage equipment, coordinate infection control, and work across clinical teams.<br><br>
+
+  <strong>Submit the following documents:</strong><br>
+  <ul>
+    <li>Updated CV with at least 3 referees</li>
+    <li>Cover Letter addressed to the HR Manager</li>
+    <li>Certified copies of qualifications</li>
+    <li>Registration certificate from PNG Medical Board</li>
+    <li>Recent Police Clearance (within 6 months)</li>
+    <li>Copy of National ID or any valid ID</li>
+  </ul>
+
+  <strong>Application Deadline:</strong> August 15, 2025
   
 ];
 
@@ -100,5 +113,6 @@ function showJob(index) {
   `;
   modal.style.display = "block";
 }
+
 
 
