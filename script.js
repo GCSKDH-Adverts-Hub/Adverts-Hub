@@ -1,4 +1,6 @@
 const jobs = [
+  {
+    
   title: "Medical Laboratory Technician",
   dept: "Clinics",
   position: "GUL-GCS-246",
@@ -23,6 +25,8 @@ const jobs = [
   </ul>
 
   <strong>Application Deadline:</strong> August 15, 2025
+  `
+}
   
 ];
 
@@ -113,6 +117,4 @@ function showJob(index) {
   `;
   modal.style.display = "block";
 }
-
-
 
