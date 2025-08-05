@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GCSKDH Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="GCS-KDH Final.png" alt="" class="logo">
+      <nav>
+        <a href="#vision">Vision</a>
+        <a href="#jobs">Jobs</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to GCSKDH Careers</h1>
+
+      <p>Join us in serving and transforming lives through healthcare.</p>
+    </div>
+  </section>
+
+  <section class="about" id="vision">
+    <h2>Our Vision</h2>
+    <p>Transforming communities into places where God’s presence dwells, so Christ is glorified.</p>
+
+    
+
+    <h2>Core Values</h2>
+    <ul>
+      <li>Excellence (Colossians 3:23, Proverbs 22:29, Mathew 22:21)</li>
+      <li>Fear of God (Proverbs 1:7, Proverbs 8:13)</li>
+      <li>Creativity (Exodus 35:31-32)</li>
+      <li>Honesty (Ephesians 4:25)</li>
+       <li>Hospitality (Timothy 3:2-5)</li>
+    </ul>
+  </section>
+
+  <section id="jobs" class="jobs-section">
+    <h2>Job Openings</h2>
+    <input type="text" id="search" placeholder="Search job title or department..." oninput="filterJobs()">
+    
+    <div id="jobList" class="job-list"></div>
+  </section>
+
+  <div id="jobModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="jobDetails"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Gulf Christian Services - Kikori District Hospital</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
