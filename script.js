@@ -7,7 +7,7 @@ const jobs = [
     location: "Kapuna District Hospital",
     vacancies: 1,
     deadline: "August 15, 2025",
-    pdf: "20220225122658 Med Lab Tech Gr 11.pdf", // ← ✅ PDF link to download JD
+    pdf: "20220225122658 Med Lab Tech Gr 11.pdf",
     description: `🧪 <strong>Medical Laboratory Technician – CHS Grade 11</strong><br>
     <strong>Salary:</strong> CHS 11<br>
     <strong>Purpose:</strong> Manage and operate the hospital lab.<br>
@@ -19,19 +19,19 @@ const jobs = [
       <li>Certified copies of qualifications</li>
       <li>Recent Police Clearance (within 6 months)</li>
       <li>Copy of National ID or any valid ID</li>
-    </ul>
-    `
+    </ul>`
   }
 ];
 
-// 2. Function to load and display all jobs on page load
+// 2. Load and display all jobs on page load
 function loadJobs() {
   const container = document.getElementById("jobList");
   container.innerHTML = "";
   jobs.forEach((job, index) => {
-    const card = document.createElement("div");
+    const card = document.createElement("button");
     card.className = "job-card";
     card.onclick = () => showJob(index);
+    card.setAttribute('role', 'listitem');
     card.innerHTML = `
       <h3>${job.title}</h3>
       <p><strong>Department:</strong> ${job.dept}</p>
@@ -42,7 +42,7 @@ function loadJobs() {
   });
 }
 
-// 3. Function to filter job cards based on user input
+// 3. Filter job cards based on user input
 function filterJobs() {
   const keyword = document.getElementById("search").value.toLowerCase();
   const filtered = jobs.filter(job =>
@@ -51,10 +51,11 @@ function filterJobs() {
   );
   const container = document.getElementById("jobList");
   container.innerHTML = "";
-  filtered.forEach((job, index) => {
-    const card = document.createElement("div");
+  filtered.forEach((job) => {
+    const card = document.createElement("button");
     card.className = "job-card";
     card.onclick = () => showJob(jobs.indexOf(job));
+    card.setAttribute('role', 'listitem');
     card.innerHTML = `
       <h3>${job.title}</h3>
       <p><strong>Department:</strong> ${job.dept}</p>
@@ -65,7 +66,7 @@ function filterJobs() {
   });
 }
 
-// 4. Function to display selected job in modal
+// 4. Display selected job in modal
 function showJob(index) {
   const modal = document.getElementById("jobModal");
   const content = document.getElementById("jobDetails");
@@ -76,24 +77,33 @@ function showJob(index) {
   const mailtoLink = `mailto:${emailTo}?subject=${subject}`;
 
   content.innerHTML = `
-    <h2>${job.title}</h2>
+    <h2 id="modalTitle">${job.title}</h2>
     <p><strong>Position Number:</strong> ${job.position}</p>
     <p><strong>Location:</strong> ${job.location}</p>
     <p><strong>Vacancies:</strong> ${job.vacancies}</p>
     <p><strong>Deadline:</strong> ${job.deadline}</p>
-    <div>${job.description}</div>
+    <div id="modalDesc">${job.description}</div>
     <br>
-    <a href="${mailtoLink}" class="apply-btn">📧 Apply via Email</a>
-    <a href="${job.pdf}" class="download-btn" download>📄 Download Full JD</a>
+    <a href="${mailtoLink}" class="apply-btn" aria-label="Apply via Email for ${job.title}">📧 Apply via Email</a>
+    <a href="${job.pdf}" class="download-btn" download aria-label="Download Full Job Description PDF for ${job.title}">📄 Download Full JD</a>
   `;
 
   modal.style.display = "block";
+  modal.focus();
 }
 
-// 5. Function to close job modal
+// 5. Close job modal
 function closeModal() {
   document.getElementById("jobModal").style.display = "none";
 }
 
-// 6. Run loadJobs when the page loads
+// 6. Close modal on Escape key press
+document.addEventListener('keydown', (e) => {
+  const modal = document.getElementById("jobModal");
+  if (e.key === 'Escape' && modal.style.display === 'block') {
+    closeModal();
+  }
+});
+
+// 7. Initialize
 window.onload = loadJobs;

@@ -11,14 +11,14 @@
   <header>
     <div class="container">
       <img src="GCS-KDH Final.png" alt="GCSKDH Logo" class="logo" />
-      <nav>
+      <nav aria-label="Primary navigation">
         <a href="#vision">Vision</a>
         <a href="#jobs">Jobs</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" role="banner">
     <div class="hero-text">
       <h1>Welcome to Gulf Christian Services - Kikori District Hospital - Careers</h1>
       <p>Join us in serving and transforming lives through healthcare.</p>
@@ -46,13 +46,14 @@
       id="search" 
       placeholder="Search job title or department..." 
       oninput="filterJobs()" 
+      aria-label="Search job title or department"
     />
-    <div id="jobList" class="job-list"></div>
+    <div id="jobList" class="job-list" role="list"></div>
   </section>
 
-  <div id="jobModal" class="modal">
+  <div id="jobModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc" tabindex="-1">
     <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
+      <button class="close" aria-label="Close modal" onclick="closeModal()">&times;</button>
       <div id="jobDetails"></div>
     </div>
   </div>
