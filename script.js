@@ -16,15 +16,14 @@ const jobs = [
 
   <strong>Submit the following documents:</strong><br>
   <ul>
-    <li>Updated CV with at least 3 referees</li>
+    <li>Updated CV, Cover Letter with at least 3 referees</li>
     <li>Cover Letter addressed to the HR Manager</li>
     <li>Certified copies of qualifications</li>
-    <li>Registration certificate from PNG Medical Board</li>
     <li>Recent Police Clearance (within 6 months)</li>
     <li>Copy of National ID or any valid ID</li>
   </ul>
 
-  <strong>Application Deadline:</strong> August 15, 2025
+ 
   `
 }
   
