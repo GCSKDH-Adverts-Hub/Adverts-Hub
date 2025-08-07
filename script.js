@@ -1,10 +1,10 @@
 // 1. Job listings data
 const jobs = [
   {
-    title: "Medical Laboratory Technician",
+    title: "Medical Lab Technician",
     dept: "Clinics",
-    position: "GUL-GCS-246",
-    location: "Kapuna District Hospital",
+    position: "2102GUL055",
+    location: "Kapuna Hospital",
     vacancies: 1,
     deadline: "August 15, 2025",
     pdf: "20220225122658 Med Lab Tech Gr 11.pdf",
