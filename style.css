@@ -1,9 +1,11 @@
+/* === Base Styles === */
 body {
   font-family: 'Times New Roman', Times, serif;
   margin: 0;
   background: #f4f4f4;
 }
 
+/* === Header === */
 header {
   background: #006699;
   color: white;
@@ -20,6 +22,8 @@ nav a {
   margin-left: 20px;
   text-decoration: none;
 }
+
+/* === Hero Section === */
 .hero {
   background: linear-gradient(#006699aa, #006699aa), url('../assets/banner.jpg') center/cover;
   color: white;
@@ -32,6 +36,8 @@ nav a {
   font-size: 2em;
   text-align: center;
 }
+
+/* === About Section === */
 .about {
   background: #fff;
   padding: 20px;
@@ -42,6 +48,8 @@ nav a {
 .about ul {
   padding-left: 20px;
 }
+
+/* === Jobs Section === */
 .jobs-section {
   padding: 20px;
 }
@@ -57,6 +65,8 @@ nav a {
   border-left: 5px solid #006699;
   cursor: pointer;
 }
+
+/* === Modal === */
 .modal {
   display: none;
   position: fixed;
@@ -78,26 +88,45 @@ nav a {
   font-size: 24px;
   cursor: pointer;
 }
+
+.logo {
+  width: 60px;       /* Adjust size as needed */
+  height: 60px;      /* Keep height equal to width for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover;  /* Ensures the image covers the circle nicely */
+  display: block;     /* Optional: to remove inline spacing */
+}
+
+
+/* === Buttons === */
+.apply-btn,
+.download-btn {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.apply-btn {
+  background: #007acc;
+}
+.download-btn {
+  background-color: #28a745;
+}
+.apply-btn:hover {
+  background: #005f99;
+}
+.apply-btn:hover,
+.download-btn:hover {
+  opacity: 0.8;
+}
+
+/* === Footer === */
 footer {
   background: #333;
   color: white;
   text-align: center;
   padding: 15px;
 }
-
-
-
-.apply-btn {
-  display: inline-block;
-  background: #007acc;
-  color: #fff;
-  padding: 12px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-.apply-btn:hover {
-  background: #005f99;
-}
-
