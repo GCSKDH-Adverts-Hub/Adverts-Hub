@@ -84,8 +84,9 @@ function showJob(index) {
     <p><strong>Deadline:</strong> ${job.deadline}</p>
     <div id="modalDesc">${job.description}</div>
     <br>
+       <a href="${job.pdf}" class="download-btn" download aria-label="Download Full Job Description PDF for ${job.title}">📄 Download Full JD</a>
     <a href="${mailtoLink}" class="apply-btn" aria-label="Apply via Email for ${job.title}">📧 Apply via Email</a>
-    <a href="${job.pdf}" class="download-btn" download aria-label="Download Full Job Description PDF for ${job.title}">📄 Download Full JD</a>
+ 
   `;
 
   modal.style.display = "block";
